@@ -1,2 +1,2 @@
 ### javaScript_algorithm
-answer to the freeCodeCamp algorithm questions
+answers to the freeCodeCamp algorithm questions
