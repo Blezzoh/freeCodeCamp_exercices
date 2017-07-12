@@ -1,3 +1,7 @@
+/*
+Return an array consisting of the largest number from each provided sub-array
+*/
+
 // return the maximum value in an array
 function getMax(arr){
   arr.sort(function(oldNum, newNum){
