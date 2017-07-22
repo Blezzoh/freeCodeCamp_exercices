@@ -1,2 +1,2 @@
 ### freeCodeCamp exercises
-answers to the freeCodeCamp exercises for Front End Development certification
+answers to freeCodeCamp exercises for Front End Development certification
