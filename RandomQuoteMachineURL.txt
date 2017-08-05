@@ -1,7 +1,0 @@
-This is a link to my project on freeCodeCamp called a random quote Machine.
-
-https://codepen.io/blezzoh/full/OjVmyz/
-
-languages: - Javascript(jQuery and jQuery Ajax)
-           - HTML
-           - API: Forismatic
