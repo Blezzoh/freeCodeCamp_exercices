@@ -1,43 +1,24 @@
-function isPrime(number) {
-    if (number % 2 == 0)
-        return false;
-    for (var i = 3;(i * i) <= number; i += 2) {
-        if (number % i == 0)
-            return false;
-    }
-    return true;
+function findMin(arr){
+   arr = arr.sort(function(a, b){
+    return a>b;
+  });
+  return arr; 
 }
-
-function nextPrime(number) {
-    var i = number;
-    while (true) {
-        i++;
-        if (isPrime(i)) return i;
+function makePairs(arr){
+  var pairs = [];
+  for(var i=arr[0]; i<arr[1]; i++){
+    for(var j= i+1; j<arr[1]; j++){
+      var temp = [i, j];
+      pairs.push(temp);
     }
-}
-
-function findPrimeDivisors(el){
-  var mapDivs = {
-    2 : 0
-  };
-  
-  var divKeys = Object.keys(mapDivs);
-  for(var i = 2; i < el/2; i++ ){
-    while(el % i === 0){
-      mapDivs[i] ++;
-      el = el/i;
-    }
-    console.log(mapDivs);
-    return mapDivs;
   }
+  return pairs;
 }
 function smallestCommons(arr) {
-  var divs = [];
-  for(var i=0; i<arr.length; i++){
-    divs[i] = findPrimeDivisors(arr[i]);
-  }
+  arr = findMin(arr);
+  console.log(makePairs(arr));
   return arr;
 }
 
 
-smallestCommons([16,8]);
+smallestCommons([1,5]);
